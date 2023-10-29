@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void zaloguj() {
         Intent intent = new Intent(this, MainActivityZalogowano.class);
+        intent.putExtra("login", login);
         startActivity(intent);
-        onBackPressed();
+        finish();
     }
 }
